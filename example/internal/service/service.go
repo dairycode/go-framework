@@ -1,6 +1,11 @@
 package service
 
-import "context"
+import (
+	"context"
+	"github.com/google/wire"
+)
+
+var Provider = wire.NewSet(New)
 
 type Service struct{}
 
